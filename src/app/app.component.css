@@ -1,0 +1,7 @@
+h1 { color: yellow;}
+.description {
+    text-align: center;
+    padding-inline-start: 0%;
+    background-color: greenyellow;
+    font-stretch: expanded;
+}
