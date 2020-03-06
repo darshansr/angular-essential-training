@@ -1,6 +1,6 @@
-<h2>{{ mediaItem.name }}</h2>
+<h2>{{ mediaItem.name | slice:0:10| uppercase }}</h2>
 <ng-template [ngIf]="mediaItem.watchedOn">
-  <div > Watched on 9/30/2016</div>
+  <div > Watched on {{mediaItem.watchedOn | date:'shortDate'}}</div>
 </ng-template>
 
 <div>{{mediaItem.medium}}</div>
