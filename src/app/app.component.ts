@@ -5,7 +5,8 @@ import { Component } from "@angular/core"
      * Selector and template or template url.  */
     selector:'mw-app',
     templateUrl:"./app.component.html",
-    styleUrls:['./app.component.css']
+    styleUrls:['./app.component.css']/**if we needed to, we could add multiple CSS files to our 
+    component and then simply add them to the array that we set to the styleUrls property */
 })
 
 export class AppComponent{

@@ -1,13 +1,15 @@
 import {NgModule} from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 import { AppComponent } from "./app.component";
+import { MediaItem } from './media-item.component/media-item.component.component';
+import { MediaItemComponent } from './media-item/media-item.component';
  
 
 @NgModule({
     imports:[BrowserModule], /*The imports property is used to bring in
                 other Angular modules that your module will need.*/
 
-    declarations:[ AppComponent],/*The declarations property is used to make
+    declarations:[ AppComponent, MediaItem.ComponentComponent, MediaItemComponent],/*The declarations property is used to make
                         components, directives, and pipes
                         available to your module
                         that don't come from another module.*/
