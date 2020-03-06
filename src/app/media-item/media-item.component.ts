@@ -1,4 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit,Output, Input } from '@angular/core';
+import { EventEmitter } from 'events';
 
 @Component({
   selector: 'app-media-item',
@@ -7,9 +8,13 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class MediaItemComponent  {
 @Input() mediaItem;
-    
+@Output() delete=new EventEmitter();
+
     //name= "The Redemption"
     onDelete(){
       console.log("on delete value ")
+      this.delete.emit(this.mediaItem);
     }
+    
+
 }
