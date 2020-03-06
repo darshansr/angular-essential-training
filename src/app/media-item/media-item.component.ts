@@ -7,8 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MediaItemComponent  {
 
- 
+    
     name= "The Redemption"
+    onDelete(){
+      console.log("on delete value ")
+    }
     
 
 }
