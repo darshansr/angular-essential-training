@@ -7,6 +7,10 @@ import { FavDirective} from './fav.directive';
 import { MediaItemListComponent } from './media-item-list/media-item-list.component'
 import { CategoryListPipe } from './category-list.pipe';
 import { MediaItemFormComponent } from './media-item-form/media-item-form.component'
+const lookupLists = {
+    mediums:['Movies','Series']
+}
+
 
 @NgModule({
     imports:[BrowserModule,ReactiveFormsModule], /*The imports property is used to bring in
@@ -17,10 +21,15 @@ import { MediaItemFormComponent } from './media-item-form/media-item-form.compon
                         available to your module
                         that don't come from another module.*/
 
-    bootstrap:[ AppComponent] /*The bootstrap property is used for a root module
+    bootstrap:[ AppComponent], /*The bootstrap property is used for a root module
     and will let Angular know which component or components
     will be the starting point for the bootstrap process.*/
 
+    providers:[
+        {provide:'lookupListToken',useValue:lookupLists}
+    ]
+
+   
 
 })
 
