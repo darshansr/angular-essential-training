@@ -13,7 +13,7 @@ import { MediaItemComponent } from './media-item/media-item.component';
                         available to your module
                         that don't come from another module.*/
 
-    bootstrap:[ AppComponent,MediaItemComponent] /*The bootstrap property is used for a root module
+    bootstrap:[ AppComponent] /*The bootstrap property is used for a root module
     and will let Angular know which component or components
     will be the starting point for the bootstrap process.*/
 
