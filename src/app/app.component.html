@@ -1,4 +1,10 @@
-<h1>My App</h1>
-
-<p class="description">Fucking all this word into 2 pices</p>
-<app-media-item (delete)="onMeditDeletItem($event)" [mediaItem]="firstMediaItem"></app-media-item>
+<header>
+<section>
+  
+        <app-media-item *ngFor="let firstMediaItem of firstMediaItems"
+        [mediaItem]="firstMediaItem"
+        (delete)="onMeditDeletItem($event)"
+        ></app-media-item>
+  
+</section>
+</header>

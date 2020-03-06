@@ -1,5 +1,5 @@
-import { Component, OnInit,Output, Input } from '@angular/core';
-import { EventEmitter } from 'events';
+import { Component, Input,Output } from '@angular/core';
+import { EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-media-item',
