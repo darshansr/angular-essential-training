@@ -5,11 +5,10 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './media-item.component.html',
   styleUrls: ['./media-item.component.css']
 })
-export class MediaItemComponent implements OnInit {
+export class MediaItemComponent  {
 
-  constructor() { }
-
-  ngOnInit() {
-  }
+ 
+    name= "The Redemption"
+    
 
 }
