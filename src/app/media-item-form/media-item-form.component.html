@@ -2,10 +2,11 @@
   <h2>Add Media to Watch</h2>
 </header>
 <form [formGroup]="form"
-(ngSubmit)="onSubmit(formGroup.value)">
+  
+(ngSubmit)="onSubmit(form.value)">
   <ul>  
     <li>
-      <label for="medium">Medium</label>
+      <label for="medium">Medium </label>
       <select name="medium" id="medium" formControlName="medium">
         <option value="Movies">Movies</option>
         <option value="Series">Series</option>
