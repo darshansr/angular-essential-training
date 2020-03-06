@@ -1,9 +1,7 @@
-<header>
-    <section>
-        <app-media-item *ngFor="let firstMediaItem of firstMediaItems"
-            [mediaItem]="firstMediaItem"
-            (delete)="onMeditDeletItem($event)"
-            [ngClass]="{'medium-movies':firstMediaItem.medium==='Movies','medium-series':firstMediaItem.medium==='Series'}">
-        </app-media-item>
-    </section>
-</header>
+<section>
+    <header>
+      <h1>Media Watch List</h1>
+      <p class="description">Keeping track of the media I want to watch.</p>
+    </header>
+    <app-media-item-list></app-media-item-list>
+  </section>
