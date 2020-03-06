@@ -2,13 +2,13 @@ import {NgModule} from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 import { AppComponent } from "./app.component";
 import { MediaItemComponent } from './media-item/media-item.component';
- 
+import { FavDirective} from './fav.directive'
 
 @NgModule({
     imports:[BrowserModule], /*The imports property is used to bring in
                 other Angular modules that your module will need.*/
 
-    declarations:[ AppComponent, MediaItemComponent],/*The declarations property is used to make
+    declarations:[ AppComponent, MediaItemComponent,FavDirective],/*The declarations property is used to make
                         components, directives, and pipes
                         available to your module
                         that don't come from another module.*/
